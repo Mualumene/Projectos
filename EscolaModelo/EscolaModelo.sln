@@ -15,14 +15,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{7840BDA6-46A6-4DBA-8717-D9A742719915}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{8B7FDE12-A062-4BDC-86FC-F4E7148F7004}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolaModelo.Tests", "src\EscolaModelo.Tests\EscolaModelo.Tests.csproj", "{A2ADB2C2-799E-43F8-961E-D3F4074E7827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolaModelo.Domain", "src\EscolaModelo.Domain\EscolaModelo.Domain.csproj", "{2A600372-8CC9-4D65-A580-CD0DD34BD53E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolaModelo.Console", "src\EscolaModelo.Console\EscolaModelo.Console.csproj", "{3DD26A3E-6D30-4BD0-A627-19CBB900EF2D}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2ADB2C2-799E-43F8-961E-D3F4074E7827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2ADB2C2-799E-43F8-961E-D3F4074E7827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2ADB2C2-799E-43F8-961E-D3F4074E7827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2ADB2C2-799E-43F8-961E-D3F4074E7827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A600372-8CC9-4D65-A580-CD0DD34BD53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A600372-8CC9-4D65-A580-CD0DD34BD53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A600372-8CC9-4D65-A580-CD0DD34BD53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A600372-8CC9-4D65-A580-CD0DD34BD53E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD26A3E-6D30-4BD0-A627-19CBB900EF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD26A3E-6D30-4BD0-A627-19CBB900EF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD26A3E-6D30-4BD0-A627-19CBB900EF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD26A3E-6D30-4BD0-A627-19CBB900EF2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7840BDA6-46A6-4DBA-8717-D9A742719915} = {34E21BB3-3092-4D00-B353-87F0F0C91800}
-		{8B7FDE12-A062-4BDC-86FC-F4E7148F7004} = {E1A61C24-2005-4ABC-9015-A6AF5686C202}
+		{2A600372-8CC9-4D65-A580-CD0DD34BD53E} = {E1A61C24-2005-4ABC-9015-A6AF5686C202}
+		{3DD26A3E-6D30-4BD0-A627-19CBB900EF2D} = {4DA2EFE1-E78D-4879-AA52-FE9BAEB6C38F}
 	EndGlobalSection
 EndGlobal
