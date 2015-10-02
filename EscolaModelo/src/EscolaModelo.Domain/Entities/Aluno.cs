@@ -18,7 +18,10 @@ namespace EscolaModelo.Domain.Entities
         public int ObterIdade(Aluno aluno)
         {
             var idade = DateTime.Now.Year - aluno.DataNascimento.Year;
-            
+            if (DateTime.Now.Month < aluno.DataNascimento.Month || (DateTime.Now.Month == aluno.DataNascimento.Month && DateTime.Now.Day < aluno.DataNascimento.Day))
+            {
+                idade--;
+            }
 
             return idade;
         }
