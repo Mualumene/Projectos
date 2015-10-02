@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{4DA2EFE1-E78D-4879-AA52-FE9BAEB6C38F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{A8B9291A-B21B-4025-BAF7-33BC7D6B2535}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{65CCA946-1717-4F30-BF4E-C250F7585ED2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{E1A61C24-2005-4ABC-9015-A6AF5686C202}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{34E21BB3-3092-4D00-B353-87F0F0C91800}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{7840BDA6-46A6-4DBA-8717-D9A742719915}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{8B7FDE12-A062-4BDC-86FC-F4E7148F7004}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7840BDA6-46A6-4DBA-8717-D9A742719915} = {34E21BB3-3092-4D00-B353-87F0F0C91800}
+		{8B7FDE12-A062-4BDC-86FC-F4E7148F7004} = {E1A61C24-2005-4ABC-9015-A6AF5686C202}
+	EndGlobalSection
+EndGlobal
