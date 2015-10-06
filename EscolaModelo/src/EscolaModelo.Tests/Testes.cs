@@ -13,7 +13,7 @@ namespace EscolaModelo.Tests
             // Arranjo
             var aluno = new Aluno();
             aluno.Nome = "Renato";
-            aluno.DataNascimento = DateTime.Parse("27/10/1972");
+            aluno.Nascimento = DateTime.Parse("27/10/1972");
 
             // Ação
             var resultado = aluno.ObterIdade(aluno);

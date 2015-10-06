@@ -3,21 +3,23 @@ using System.Collections.Generic;
 
 namespace EscolaModelo.Domain.Entities
 {
-    public class Aluno
+    public class Responsavel
     {
-        public Aluno()
+        public Responsavel()
         {
-            AlunoId = Guid.NewGuid();
+            ResponsavelId = Guid.NewGuid();
         }
 
-        public Guid AlunoId { get; set; }
+        public Guid ResponsavelId { get; set; }
 
         public string Nome { get; set; }
+
+        public string Parentesco { get; set; }
 
         public DateTime Nascimento { get; set; }
 
         public string UFNascimento { get; set; }
-        
+
         public string Naturalidade { get; set; }
 
         public string Nacionalidade { get; set; }
@@ -66,24 +68,16 @@ namespace EscolaModelo.Domain.Entities
 
         public string Passaporte { get; set; }
 
-        public string IdCensoEscolar { get; set; }
+        public string Empresa { get; set; }
+
+        public string Cargo { get; set; }
 
         public DateTime DataCadastro { get; set; }
 
         public bool Ativo { get; set; }
-        
-        public  ICollection<Responsavel> Responsaveis { get; set; }
 
-        public int ObterIdade(Aluno aluno)
-        {
-            var idade = DateTime.Now.Year - aluno.Nascimento.Year;
-            if (DateTime.Now.Month < aluno.Nascimento.Month || (DateTime.Now.Month == aluno.
-                Nascimento.Month && DateTime.Now.Day < aluno.Nascimento.Day))
-            {
-                idade--;
-            }
+        public Guid AlunoId { get; set; }
 
-            return idade;
-        }
+        public Aluno aluno;
     }
 }
