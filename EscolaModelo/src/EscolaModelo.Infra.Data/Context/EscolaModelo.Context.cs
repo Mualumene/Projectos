@@ -7,6 +7,7 @@ using System.Data.Entity;
 using EscolaModelo.Domain.Entities;
 using System.Data.Entity.ModelConfiguration.Configuration;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using EscolaModelo.Infra.Data.EntityConfig;
 
 namespace EscolaModelo.Infra.Data.Context
 {
@@ -37,6 +38,9 @@ namespace EscolaModelo.Infra.Data.Context
 
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasMaxLength(100));
+
+            modelBuilder.Configurations.Add(new AlunoConfig());
+            modelBuilder.Configurations.Add(new ResponsavelConfig());
 
             base.OnModelCreating(modelBuilder);
         }

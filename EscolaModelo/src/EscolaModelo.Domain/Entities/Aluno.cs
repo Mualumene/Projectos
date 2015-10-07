@@ -16,10 +16,14 @@ namespace EscolaModelo.Domain.Entities
 
         public string Nome { get; set; }
 
+        public string Sexo { get; set; }
+
         public DateTime Nascimento { get; set; }
 
         public string UFNascimento { get; set; }
-        
+
+        public string CPF { get; set; }
+
         public string Naturalidade { get; set; }
 
         public string Nacionalidade { get; set; }
@@ -83,6 +87,12 @@ namespace EscolaModelo.Domain.Entities
         public string UF { get; set; }
 
         public string CEP { get; set; }
+
+        public string Login { get; set; }
+
+        public string Senha { get; set; }
+
+        public string NumRegistro { get; set; }
 
         public DateTime DataCadastro { get; set; }
 

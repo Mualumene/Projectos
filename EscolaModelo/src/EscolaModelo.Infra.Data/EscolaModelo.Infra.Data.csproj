@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Context\EscolaModelo.Context.cs" />
     <Compile Include="EntityConfig\AlunoConfig.cs" />
+    <Compile Include="EntityConfig\ResponsavelConfig.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

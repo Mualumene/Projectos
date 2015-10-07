@@ -16,6 +16,10 @@ namespace EscolaModelo.Domain.Entities
 
         public string Parentesco { get; set; }
 
+        public string Sexo { get; set; }
+
+        public string CPF { get; set; }
+
         public DateTime Nascimento { get; set; }
 
         public string UFNascimento { get; set; }
@@ -71,6 +75,8 @@ namespace EscolaModelo.Domain.Entities
         public string Empresa { get; set; }
 
         public string Cargo { get; set; }
+
+        public string Profissao { get; set; }
 
         public DateTime DataCadastro { get; set; }
 
