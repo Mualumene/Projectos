@@ -78,6 +78,6 @@ namespace EscolaModelo.Domain.Entities
 
         public Guid AlunoId { get; set; }
 
-        public Aluno aluno;
+        public virtual Aluno Aluno { get; set; }
     }
 }

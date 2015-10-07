@@ -8,6 +8,8 @@ namespace EscolaModelo.Domain.Entities
         public Aluno()
         {
             AlunoId = Guid.NewGuid();
+
+            Responsaveis = new List<Responsavel>();
         }
 
         public Guid AlunoId { get; set; }
@@ -68,11 +70,25 @@ namespace EscolaModelo.Domain.Entities
 
         public string IdCensoEscolar { get; set; }
 
+        public string Logradouro { get; set; }
+
+        public int Numero { get; set; }
+
+        public string Complemento { get; set; }
+
+        public string Bairro { get; set; }
+
+        public string Cidade { get; set; }
+
+        public string UF { get; set; }
+
+        public string CEP { get; set; }
+
         public DateTime DataCadastro { get; set; }
 
         public bool Ativo { get; set; }
         
-        public  ICollection<Responsavel> Responsaveis { get; set; }
+        public  virtual ICollection<Responsavel> Responsaveis { get; set; }
 
         public int ObterIdade(Aluno aluno)
         {
